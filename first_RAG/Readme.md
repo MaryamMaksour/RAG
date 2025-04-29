@@ -13,3 +13,18 @@ This is a minimal implementaion of the RAG model for question answering
 
 ## Requirments
 - python 3.8 or later
+
+## Installation
+
+### Install the required packages
+
+```bash
+$ pip install r- requirements.txt
+```
+
+### Setup the environment variables
+```bash
+$ cp .env.example .env
+```
+
+set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
