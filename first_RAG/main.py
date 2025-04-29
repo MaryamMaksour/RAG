@@ -7,4 +7,3 @@ def welcome():
     return{
         "message" : "Hello world!"
     }
-
