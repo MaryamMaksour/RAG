@@ -17,4 +17,15 @@ class DataChunk(BaseModel):
     class Config:
         arbitrary_types_allowed = True # Do not know what is objectid is SO ignore 
     
-    
+    @classmethod
+    def get_indexes(cls): # we put cls insted self because it is static method
+        return [
+            {
+                "key":[ #    1 for Ascending order, 
+                    ("chunk_project_id", 1)
+                ],
+                "name": "chunk_project_id_index_1",
+                "unique": False  
+
+            }
+        ]
