@@ -19,7 +19,7 @@ class ProjectModel(BaseDataModel):
 
     async def init_collection(self): # create the indexing
         all_collections = await self.db_client.list_collection_names()
-        if DataBaseEnum.COLLECTION_PROJECT_NAME.value not in all_collections:
+        if DataBaseEnum.COLLECTION_PROJECCT_NAME.value not in all_collections:
                     self.collection = self.db_client[DataBaseEnum.COLLECTION_PROJECCT_NAME.value]
                     indexes = Project.get_indexes()
                     for index in indexes:
