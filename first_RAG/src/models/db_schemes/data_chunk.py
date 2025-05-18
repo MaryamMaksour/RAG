@@ -13,6 +13,8 @@ class DataChunk(BaseModel):
 
     chunk_project_id: ObjectId
 
+    chunk_asset_id: ObjectId
+
  
     class Config:
         arbitrary_types_allowed = True # Do not know what is objectid is SO ignore 
